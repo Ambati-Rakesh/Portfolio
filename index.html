@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7461a516f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/portfoliologo.webp" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p> Web Developer</p> -->
+                <h1>Hi, I'm <span>Ambati Rakesh</span>.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Welcome to my portfolio! I'm Ambati Rakesh, a B.Tech Student with a deep love for Web Development. With some of experience in skills like Html,Css,Javascript, I thrive on turning ideas into impactful solutions.
+                        I'm excited about the journey ahead, eager to tackle new challenges, and always open to learning from every experience. Let's connect and create something amazing together!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('projects')" >Projects</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Java</span><br>For coding Web Applications</li>
+                            <li><span>Python</span><br>For coding</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Sept,2023</span><br>Online Shopping Website</li>
+                            <li><span>April,2023</span><br>Snake Game using Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.tech Computer Science and Engineering
+                                <br>Anurag University,Hyderabad || CGPA-8.9</li>
+                            <li><span>2019-2021</span><br>Intermediate<br>Narayana Junior College,Hyderabad || Percentage-89%</li>
+                            <li><span>2019</span><br>SSC <br> Sri Chaitanya High School
+                                 || CGPA-9.8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <!-- services -->
+   <div id="services">
+     <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <a href="https://github.com/Ambati-Rakesh/Online-Shopping-Website.git">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Ecommerce website</h2>
+                <p>Developed a static website for online groceries shopping using HTML, CSS, and JavaScript.
+                Implemented a user-friendly interface with navigation menus, product listings, and a shopping cart.
+                Used JavaScript for interactive elements such as dynamic product updates and form validation
+                    </p>
+                <a href="#">Learn more</a>
+            </a>
+            </div>
+            
+            <div>
+                <a href="https://github.com/Ambati-Rakesh/Snake-Game.git">
+                <i class="fa-solid fa-staff-snake"></i>
+                <h2>Snake Game</h2>
+                <p>This project is a simple implementation of the classic Snake game using the Python Turtle graphics library. The game features a snake that moves around the screen, eating food pellets to grow longer. The snake must avoid running into walls or into itself, which would end the game.
+                    </p>
+                <a href="#">Learn more</a>
+            </a>
+            </div>
+        </div>
+     </div>
+   </div>
+
+  <!-- portfolio -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/hackerrank1.png">
+                <div class="layer">
+                    <br>
+                    <h4>Hacker Rank-Problem Solving</h4> 
+                    <p>It covers topics of Data Structures (such as HashMaps, Stacks and Queues) and Algorithms (such as Optimal Solutions).</p>
+                    <a href="https://www.hackerrank.com/certificates/2c269d680d81"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/hackerrank2.png">
+                <div class="layer">
+                    <br>
+                    <h4>Hacker Rank - Java</h4> 
+                    <p>It will cover basic topics in Java language such as classes, data structures, inheritance, exception handling, etc.</p>
+                    <a href="https://www.hackerrank.com/certificates/5b478f1027f1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/hackerrank3.png">
+                <div class="layer">
+                    <br>
+                    <h4>Hacker Rank - Python</h4> 
+                    <p>It covers topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes</p>
+                    <a href="https://www.hackerrank.com/certificates/c1c95e37f1c6"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/hackerrank3.png">
+                <div class="layer">
+                    <br>
+                    <h4>Hacker Rank - SQL</h4> 
+                    <p>It includes simple queries, relationships, and aggregators.</p>
+                    <a href="https://www.hackerrank.com/certificates/e38a58609bb7"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p> <i class="fa-solid fa-paper-plane"></i> rakeshambati06@gmail.com</p>
+               <p> <i class="fa-solid fa-phone"></i> 7671848605</p>
+               <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rakesh-ambati-74aa11297/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Ambati-Rakesh/Online-Shopping-Website.git"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rakesh : All rights reserved for portfolio content.</p>
+    </div>
+</div>
+
+  <!-- javascript -->
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+
+ <script>
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+
+ </script>
+
+</body>
+</html>
